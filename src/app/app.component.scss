@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@800&display=swap');
+@import "./Glitch.scss";
+
 li , a, h2
  {
   font-family: 'Montserrat', sans-serif;
@@ -7,14 +9,89 @@ h1 {
   font-family: 'Titillium Web', sans-serif;
 }
 $c:#fcedd4;
-$b:#1a281f;
-$r:#cc0000;
+$b:#002503;
+$r:#ff003f;
 body{
     margin: 0;
-    padding:0
+    padding:0;
 }
+
 .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(to bottom right,$b,#000000,);
+}
+#headline{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#title{
+    width: 30vw;
+    justify-content: center;
+    padding-left: 10vw;
+}
+#links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    padding-left: 10vw;
+}
+h1{
+    font-size: 3rem;
+    color:$c;
+    font-weight: 600;
+}
+h5{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:$c;
+}
+h5:hover{
+    color:#e7d8be;
+}
+.breaker{
+    display: inline-block;
+    background-color: $r;
+    width: 100vw;
+    height: 2px;
+    box-shadow: inset 0 0 .5rem 0 $r,
+    0 0 .5rem 0 $r;
+}
+.container{
+    height: 80vh;
+    width: 100vw;
+    background-color: #e7d8be00;
+}
+.sidenav{
+    background-color:#0c1f0600;
+    border: 0;
+}
+#ProjectMenu{
+  padding: 0;
+  li{
+    list-style: none;
+    padding:10px;
+    color:$c;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    p{
+      margin: 0;
+    }
+  }
+  li:hover{
+    background-color: #001302;
+  }
 }
