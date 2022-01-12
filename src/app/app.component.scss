@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@800&display=swap');
+li , a, h2
+ {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Titillium Web', sans-serif;
+}
+$c:#fcedd4;
+$b:#1a281f;
+$r:#cc0000;
+body{
+    margin: 0;
+    padding:0
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right,$b,#000000,);
+}
