@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap');
 @import "./Glitch.scss";
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  overflow-x: hidden;
+ }
 
-li , a, h2
- {
-  font-family: 'Montserrat', sans-serif;
+ @font-face {
+  font-family: myFirstFont;
+  src: url(../assets/Pixelmania.ttf)format("truetype");
 }
-h1 {
-  font-family: 'Titillium Web', sans-serif;
+h1 , h5 , h3, h4{
+  font-family: myFirstFont;
 }
-$c:#fcedd4;
+$c:#02a602;
 $b:#002503;
 $r:#ff003f;
 body{
@@ -21,43 +29,50 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    background-image: linear-gradient(to bottom right,$b,#000000,);
+    background-image: linear-gradient(to bottom,$b,2%,#000000);
+}
+.close-container{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  #close{
+    color: #02a602ab;
+    font-size: medium;
+  }
 }
 #headline{
     width: 100vw;
     height: 20vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 #title{
     width: 30vw;
     justify-content: center;
-    padding-left: 10vw;
+    padding-left: 10px;
 }
 #links{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 40vw;
-    padding-left: 10vw;
+    padding-left: 10px;
 }
 h1{
     font-size: 3rem;
     color:$c;
     font-weight: 600;
+    opacity: .2;
 }
 h5{
-    font-size: 1.3rem;
-    font-weight: 600;
     color:$c;
 }
 h5:hover{
-    color:#e7d8be;
+    color:$c;
 }
 .breaker{
     display: inline-block;

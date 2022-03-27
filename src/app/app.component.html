@@ -1,32 +1,30 @@
 <div class="wrapper">
   <div id="headline">
-      <div id="links">
+    <div id="title">
+        <h3 class="glitch" data-text="
+        JOSHUA IMMORDINO">
+            JOSHUA IMMORDINO
+        </h3>
+    </div>
+    <div id="links">
           <h5 class="glitch" data-text="
-          Projects" (click)="drawer.toggle()"><mat-icon>add</mat-icon>Projects</h5>
-          <h5 class="glitch" data-text="
-          Information"><mat-icon>add</mat-icon>Information</h5>
-          <h5 class="glitch" data-text="
-          Contact"><mat-icon>add</mat-icon>Contact</h5>
-      </div>
-      <div id="title">
-          <h1 class="glitch" data-text="
-          Joshua Immordino">
-              Joshua Immordino
-          </h1>
-      </div>
+          Projects" (click)="drawer.toggle()"><mat-icon>add</mat-icon>PROJECTS</h5>
+    </div>
   </div>
-  <span class="breaker"></span>
   <mat-sidenav-container class="container" >
+      <mat-sidenav class = "sidenav" mode="side" #drawer>
+        <div class="close-container">
+          <mat-icon id="close"(click)="drawer.toggle()">close</mat-icon>
+        </div>
+          <ul id="ProjectMenu">
+            <li routerLink="/Projects/Joshimmor/NCAALinearRegressionHandicapper/main/README.md" (click)="drawer.toggle()"><mat-icon>folder</mat-icon> &nbsp; NCAA Machine Learning Model</li>
+            <li routerLink="/Projects/Joshimmor/McQuillingDocumentation/main/README.md" (click)="drawer.toggle()"><mat-icon>folder</mat-icon> &nbsp; McQuilling Partner Inc</li>
+            <li routerLink="/Projects/Joshimmor/CodingClub2022/main/README.md" (click)="drawer.toggle()"><mat-icon>folder</mat-icon> &nbsp; CUNY Coding Club</li>
+            <li routerLink="/Projects/Joshimmor/Shopify-wordpress-headless-starter/main/README.md" (click)="drawer.toggle()"><mat-icon>folder</mat-icon> &nbsp; Shopify Headless Templated</li>
+          </ul>
+      </mat-sidenav>
       <mat-sidenav-content>
         <router-outlet></router-outlet>
       </mat-sidenav-content>
-      <mat-sidenav class = "sidenav" mode="side" #drawer>
-          <ul id="ProjectMenu">
-              <li><mat-icon>folder</mat-icon> &nbsp; McQuilling Partner Inc</li>
-              <li><mat-icon>folder</mat-icon> &nbsp; Fairview  Nursing Care</li>
-              <li><mat-icon>folder</mat-icon> &nbsp; Shareity</li>
-              <li><mat-icon>folder</mat-icon> &nbsp; CUNY Coding Club</li>
-          </ul>
-      </mat-sidenav>
   </mat-sidenav-container>
 </div>

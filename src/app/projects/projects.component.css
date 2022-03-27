@@ -1,0 +1,47 @@
+
+markdown ::ng-deep li, ::ng-deep a, ::ng-deep h2,::ng-deep h1,::ng-deep code, ::ng-deep h5, ::ng-deep p { 
+  font-family: 'JetBrains Mono', monospace;
+     color:#02a602 !important;
+    display: flex;
+    flex-wrap: wrap !important;
+    width:80vw !important;
+    box-sizing: border-box !important;
+  }
+  
+  markdown {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  markdown ::ng-deep code{
+    background-color: #002600;
+    width:100%!important;
+  }
+  html,body{
+    overflow-x: hidden;
+   }
+   .doc{
+     overflow-x: hidden;
+     width: 80vw;
+     padding-left: 1rem;
+   }
+  markdown ::ng-deep img {
+     width:80vw !important
+   }
+   markdown ::ng-deep code > #Text{
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+   }
+   @media only screen and (max-width: 600px) {
+    markdown ::ng-deep li, ::ng-deep a, ::ng-deep h2,::ng-deep h1,::ng-deep code, ::ng-deep h5, ::ng-deep p { 
+      width:60vw !important;
+    }
+    markdown ::ng-deep img {
+      width:90vw !important
+    }
+  }
